@@ -1,7 +1,3 @@
-# Program make a simple calculator
-import time
-
-
 # This function adds two numbers
 def add(x, y):
     return x + y
@@ -40,7 +36,6 @@ def checkDivByZero(number_2):
 
 
 def enterNumber():
-    num = 0
     while True:
         try:
             num = input()
@@ -81,6 +76,6 @@ while True:
 
     # check if user wants another calculation
     # break the while loop if answer is no
-    next_calculation = input("Let's do next calculation? (yes/no): ")
-    if next_calculation == "no":
+    next_calculation = input("For exit enter 'bey': ")
+    if next_calculation == "bey":
         exit()
